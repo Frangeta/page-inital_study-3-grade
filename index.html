@@ -157,6 +157,7 @@
     .card:nth-child(1) { animation-delay: 0.1s; }
     .card:nth-child(2) { animation-delay: 0.25s; }
     .card:nth-child(3) { animation-delay: 0.4s; }
+    .card:nth-child(4) { animation-delay: 0.55s; }
 
     @keyframes cardSlideIn {
       0% { transform: translateY(40px) scale(0.8); opacity: 0; }
@@ -173,6 +174,7 @@
 
     .card-comunidades::before { background: var(--orange); }
     .card-multiplicacion::before { background: var(--purple); }
+    .card-body::before { background: var(--red); }
     .card-pronto::before { background: var(--green); }
 
     .card:hover {
@@ -194,6 +196,7 @@
 
     .card:nth-child(2) .card-icon { animation-delay: 0.5s; }
     .card:nth-child(3) .card-icon { animation-delay: 1s; }
+    .card:nth-child(4) .card-icon { animation-delay: 1.5s; }
 
     @keyframes pulse {
       0%, 100% { transform: scale(1); }
@@ -214,6 +217,7 @@
 
     .card-comunidades .card-tag { background: #FFE4D0; color: var(--orange); }
     .card-multiplicacion .card-tag { background: #EDE0FF; color: var(--purple); }
+    .card-body .card-tag { background: #FFE0E6; color: var(--red); }
     .card-pronto .card-tag { background: #D0FFF4; color: #059669; }
 
     .card-title {
@@ -247,6 +251,7 @@
 
     .card-comunidades:hover .card-btn { background: var(--orange); }
     .card-multiplicacion:hover .card-btn { background: var(--purple); }
+    .card-body:hover .card-btn { background: var(--red); }
     .card-pronto:hover .card-btn { background: var(--green); color: var(--dark); }
 
     .card-pronto {
@@ -338,6 +343,15 @@
         <span class="card-btn">¡Jugar ahora! →</span>
       </a>
 
+      <!-- Human Body Systems -->
+      <a href="https://frangeta.github.io/ouer-body/" target="_blank" class="card card-body">
+        <span class="card-tag">🧬 Science</span>
+        <div class="card-icon">🫀</div>
+        <div class="card-title">Human Body Systems</div>
+        <p class="card-desc">Learn the digestive, respiratory, circulatory and excretory systems. Type, match & master!</p>
+        <span class="card-btn">Let's learn! →</span>
+      </a>
+
       <!-- Próximamente -->
       <div class="card card-pronto">
         <span class="card-tag">🔜 Próximamente</span>
@@ -357,7 +371,7 @@
 
   <script>
     // Generate floating emojis in background
-    const emojis = ['⭐', '🌟', '✨', '💫', '🎈', '🌈', '🎉', '📚', '✏️', '🔢'];
+    const emojis = ['⭐', '🌟', '✨', '💫', '🎈', '🌈', '🎉', '📚', '✏️', '🔢', '🧬', '🫀', '🫁'];
     const container = document.getElementById('starsContainer');
     for (let i = 0; i < 20; i++) {
       const el = document.createElement('div');
